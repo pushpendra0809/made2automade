@@ -1,11 +1,11 @@
 
-import Notes from './Notes'
+import Dashboard from "./Dashboard";
 export const Home = (props) => {
  const { showAlert} = props
   return (
     <div>
      
-      <Notes showAlert={showAlert} />
+      <Dashboard  />
     </div>
   );
 };

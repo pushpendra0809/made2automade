@@ -6,7 +6,106 @@
   height: 40vmin;
   pointer-events: none;
 }
+.line ul li link{
+  list-style: none;
+}
+.number3{
+  display: flex;
+}
+.iteam1{
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  padding: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.iteam1 p h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+  object-fit: contain;
+ 
+}
+.checked{
+  width: 35px;
+  padding: 2px;
+  margin: 2px;
 
+}
+#barcode{
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+#btnbarcode{
+  justify-content: center;
+  position: relative;
+  margin: 60px;
+  align-items: center;
+  display: flex;
+}
+.master-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  font-size: 1.5rem;
+}
+.firstSection{
+  display: flex;
+  justify-content: space-around;
+  margin: 130px 0;
+}
+.firstSection > div{
+  width: 30%;
+}
+.leftSection {
+  font-size: 3rem;
+}
+#intro1{
+  margin: 0 12px 22px;
+}
+#intro1 h1 {
+display: grid;
+justify-content: center;
+margin-top: 12px;
+}
+
+.form1{
+
+  justify-content: center;
+  align-items: center;
+}
+form{
+  display: grid;
+  background-color: 1px 1px 3px 2px #ddd;
+  margin:40px auto;
+}
+.form1 input{
+  margin: 10px;
+}
+.form1 h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .send{
+  height: 40px;
+  width:90px;
+  align-items: center;
+  border:none;
+  background-color: rgb(29,185,237);
+}
+.fileuploader{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

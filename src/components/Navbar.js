@@ -16,11 +16,11 @@ const Navbar = () => {
         {/* <Link className="navbar-brand"  to="/">iNotebook</Link> */}
         {isAuthenticated ? (
           <Link className="navbar-brand" to="/home">
-            iNotebook
+            Product Management System
           </Link>
         ) : (
           <Link className="navbar-brand" to="/login">
-            iNotebook
+            Product Management System
           </Link>
         )}
         <button
@@ -34,14 +34,30 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse navbar" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item mx-1">
-              <Link className={`nav-item ${location.pathname==="/home"?"active": ""}`} aria-current="page" to="/home">Home</Link>
+              <Link className={`nav-item ${location.pathname==="/dashboard"?"active": ""}`} aria-current="page" to="/dashboard">Home</Link>
             </li>
             <li className="nav-item mx-1" >
               <Link className={`nav-item ${location.pathname==="/about"? "active": ""}`} to="/about">About</Link>
             </li>
+            <li className="nav-item mx-1" >
+              <Link className={`nav-item ${location.pathname==="/orders"? "active": ""}`} to="/orders">Orders</Link>
+            </li>
+            <li className="nav-item mx-1" >
+              <Link className={`nav-item ${location.pathname==="/dashboard"? "active": ""}`} to="/dashboard">Dashboard</Link>
+            </li>
+            <li className="nav-item mx-1" >
+              <Link className={`nav-item ${location.pathname==="/barcode"? "active": ""}`} to="/Barcode">Barcode</Link>
+            </li>
+            <li className="nav-item mx-1" >
+              <Link className={`nav-item ${location.pathname==="/eCommerceListing"? "active": ""}`} to="/eCommerceListing">ECommerceListing</Link>
+            </li>
+            <li className="nav-item mx-1" >
+              <Link className={`nav-item ${location.pathname==="/addProduct"? "active": ""}`} to="/AddProduct"> AddProduct</Link>
+            </li>
+           
           </ul>
           {!localStorage.getItem('token')?<form className="d-flex" role="search">
             <input
@@ -60,3 +76,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
